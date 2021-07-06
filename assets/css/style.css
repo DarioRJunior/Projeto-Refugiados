@@ -1,0 +1,619 @@
+/* Padrão das fontes
+
+    font-family: 'muli', sans-serif;
+    font-weight: 700;
+    Size: 16px;
+    line-height: 24px;
+
+Cores para usar no site:
+    ciano - #baffed
+    salmão - #ff6a5c
+    laranja - #ffa361
+    verde - #baffed
+    Footer - #327c99
+    Botão ver todos - #327c99
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'muli', sans-serif;
+    font-weight: 700;
+}
+
+html, body {
+    max-width: 1920px;
+    height: 100%;
+}
+
+/* MENU */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 100px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 22px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+#logo {
+    float: left;
+    margin-left: 10px;
+}
+
+.logo1, .logo2 {
+    padding: 10px;
+}
+
+header nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 9px 15px;
+}
+
+header nav ul li.sub-menu:before {
+    content: '\f078';
+    color: #327c99;
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 48px;
+    right: 0px;
+}
+
+header nav ul li.active.sub-menu:before {
+    content: '\f077';
+}
+
+header nav ul li ul {
+    position: absolute;
+    display: none;
+    min-width: 280px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 1rem 1rem rgb(0 0 0 / 20%);
+    box-shadow: 0 1rem 1rem rgb(0 0 0 / 20%);
+}
+
+header nav ul li.active ul {
+    display: block;
+}
+
+header nav ul li ul li {
+    display: block;
+    width: 250px;
+}
+
+header nav ul li a {
+    color: #000;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: #ff6a5c;
+}
+
+.btn-menu {
+    margin-left: 20px;
+    width: 200px;
+    height: 50px;
+    border-color: #000;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.btn-menu:hover {
+    background: #ff6a5c;
+    color: #fff;
+}
+
+.menu-toggle {
+    color: #000;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* FIM DO MENU */
+
+/* BANNER */
+
+#bannerPrincipal {
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 600px;
+}
+
+.faixa {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgba(255, 255, 255, .7);
+    position: relative;
+    top: -280px;
+}
+
+.align-items-start {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.logoFaixaCS {
+    max-width: 280px;
+}
+
+.logoFaixaAcnur {
+    max-width: 150px;
+}
+
+.logoFaixaUni {
+    max-width: 250px;
+}
+
+/* FIM DO BANNER */
+
+/* MAIN */
+
+.conteudo {
+    height: 100%;
+}
+
+.centraliza {
+    text-align: center;
+}
+
+#destaques {
+    text-align: center;
+    margin-top: -150px;
+}
+
+#destaques h1 {
+    font-weight: bold;
+}
+
+.estrela {
+    margin-top: 30px;
+    height: 100px;
+}
+
+main .cards {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px 0px;
+    margin: auto;
+}
+
+.cards .card {
+    width: 400px;
+    height: 550px;
+    background-color: #80b7cc;
+}
+
+#destaques .cards .card img {
+    background-size: cover;
+    height: 350px;
+}
+
+.cards .card:hover {
+    cursor: pointer;
+}
+
+.card-data {
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.col {
+    padding: 20px;
+}
+
+.row p {
+    color: #000;
+    font-size: 15px;
+}
+
+.row h2 {
+    color: #000;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/* Ultimas noticias */
+
+#ultimas {
+    text-align: center;
+}
+
+#ultimas .card-data {
+    text-align: center;
+}
+
+#ultimas .titulo {
+    font-weight: bolder;
+}
+
+#ultimas .card {
+    height: 550px;
+    background: #F86B62;
+}
+
+/* FIM das Ultimas noticias */
+
+/* BOTOES */
+
+.btn {
+    background-color: #327c99;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.btn:hover {
+    color: #ff6a5c;
+}
+
+.ver-mais a {
+    text-decoration: none;
+    color: #327c99;
+}
+
+.ver-mais a:hover {
+    color: #f9b122;
+}
+
+/* FIM BOTOES */
+
+/* FIM DO MAIN */
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #80b7cc;
+    color: #000;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.sociais {
+    text-align: center;
+}
+
+.sociais i {
+    color: #000;
+    font-size: 40px;
+    margin: 0px 40px;
+}
+
+footer h5 {
+    font-weight: bolder;
+}
+
+.link-secondary {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-footer {
+    width: 200px;
+    height: 50px;
+    background: #80b7cc;
+    border-color: #000;
+    border-radius: 5px;
+}
+
+.btn-footer:hover {
+    background: #ff6a5c;
+    color: #fff;
+}
+
+#direitos {
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+#direitos p {
+    font-family: 'muli', sans-serif;
+    font-weight: 400;
+    Size: 14px;
+    line-height: 21px;
+    color: #747474;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* FIM DO FOOTER */
+
+/* RESPONSIVIDADE */
+
+@media(max-width:1450px) {
+    header #logo {
+        height: 50px;
+        margin-left: -70px;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width:1370px) {
+    header #logo {
+        margin-left: -70px;
+        transition: 0.3s;
+    }
+    header #logo .logo1, .logo2 {
+        height: 50px;
+    }
+}
+
+@media(max-width:1310px) {
+    header #logo {
+        height: 30px;
+        margin-left: -70px;
+        transition: 0.3s;
+    }
+    header #logo .logo1, .logo2 {
+        height: 40px;
+    }
+}
+
+@media(max-width:1250px) {
+    header #logo {
+        visibility: hidden;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width:1140px) {
+    header nav ul li a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1000px) {
+    header {
+        padding: 15px 15px;
+        height: 75px;
+        width: 100%;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    #logo .logo1, .logo2 {
+        height: 50px;
+        margin-left: 20px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #fff;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    header nav ul li.active ul {
+        height: 100%;
+        position: relative;
+        box-shadow: none;
+    }
+    header nav ul li ul li {
+        width: 100%;
+    }
+    main .cards {
+        flex-wrap: wrap;
+    }
+    .cards .card:hover {
+        transform: none;
+        transition: none;
+    }
+    #bannerPrincipal {
+        height: 500px;
+        width: 100%;
+    }
+    .faixa {
+        width: 100%;
+        margin-top: 130px;
+    }
+    .logoFaixaCS, .logoFaixaAcnur, .logoFaixaUni {
+        height: 25px;
+    }
+    footer {
+        height: 100%;
+    }
+    #direitos {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+
+@media(max-width: 500px) {
+    header {
+        padding: 15px 15px;
+        height: 75px;
+        width: 100%;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    #logo .logo1, .logo2 {
+        height: 50px;
+        margin-left: 20px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #fff;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    header nav ul li.active ul {
+        height: 100%;
+        position: relative;
+        box-shadow: none;
+    }
+    header nav ul li ul li {
+        width: 100%;
+    }
+    main .cards {
+        flex-wrap: wrap;
+    }
+    .cards .card:hover {
+        transform: none;
+        transition: none;
+    }
+    #bannerPrincipal {
+        height: 500px;
+        width: 100%;
+    }
+    .faixa {
+        width: 100%;
+        margin-top: 130px;
+    }
+    .logoFaixaCS, .logoFaixaAcnur, .logoFaixaUni {
+        height: 25px;
+    }
+    footer {
+        height: 100%;
+    }
+    .btn-footer{
+        width: 150px;
+    }
+    #direitos {
+        width: 100%;
+    }
+}
+
+/*Estilo paígna dos Submenus*/
+
+.containerPSub {
+    width: 80%;
+    margin-top: -5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 180px;
+}
+
+.containerPSub h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    padding-right: 15px;
+    background-image: linear-gradient(to left, #327c99, #fff);
+    width: 100%;
+    text-align: end;
+    color: #fff;
+}
+
+.containerPSub p {
+    margin-top: 45px;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.estiloLinks {
+    text-decoration: none;
+    color: #F86B62;
+}
+
+/*Estilo página oQueECatedra*/
+
+/*Fim estilo página oQueECatedra*/
+
+/*Estilo página equipe*/
+
+.profPart {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.profPart h4 {
+    background-image: linear-gradient(to bottom, #7e7e7e, #fff);
+    margin-top: 50px;
+    text-align: end;
+    border-bottom: 3px solid #f9b122;
+    border-radius: 10px;
+}
+
+/*Fim estilo página equipe*/
+.fa-android{
+    font-size: 200px;
+}

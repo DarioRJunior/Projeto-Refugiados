@@ -1,0 +1,24 @@
+#bannerPaginaCsvm{
+    margin-bottom: 200px;
+}
+
+
+@media(max-width: 500px){
+    .oQueECatedra{
+        margin-left: -80px;
+        width: 320px;
+    }
+    .containerPSub{
+        width: 100%;
+    }
+    #bannerPaginaCsvm{
+        margin-bottom: 100px;
+    }
+    #bannerPrincipal{
+        height: 300px;
+        width: 100%;
+    }
+    .containerPSub h2 {
+        background-image: linear-gradient(to left, #327c99, #327c99);
+    }
+}

@@ -1,0 +1,21 @@
+#bannerPaginaUni{
+    margin-bottom: 200px;
+}
+
+@media(max-width: 500px){
+    .sobreUnicuritiba{
+        margin-left: -80px;
+        width: 320px;
+    }
+    .containerPSub{
+        width: 100%;
+    }
+    #bannerPrincipal{
+        height: 300px;
+        width: 100%;
+    }
+    #bannerPaginaUni{
+        margin-bottom: 100px;
+        width: 100%;
+    }
+}

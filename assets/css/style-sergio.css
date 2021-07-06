@@ -1,0 +1,34 @@
+#bannerPaginaSergio {
+    margin-bottom: 200px;
+}
+
+#imgSergio {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 500px) {
+    .sergio {
+        margin-left: -80px;
+        width: 320px;
+    }
+    .containerPSub {
+        width: 100%;
+    }
+    #bannerPaginaSergio {
+        margin-bottom: 100px;
+    }
+    #bannerPrincipal {
+        height: 300px;
+        width: 100%;
+    }
+    .containerPSub h2 {
+        background-image: linear-gradient(to left, #327c99, #327c99);
+    }
+    #imgSergio {
+        height: 200px;
+        width: 200px;
+        margin-left: -20px;
+    }
+}

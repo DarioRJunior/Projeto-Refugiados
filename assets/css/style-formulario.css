@@ -1,0 +1,129 @@
+#bannerFormulario {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.imagem_mobile {
+    display: none;
+}
+
+.imagem_desktop {
+    display: block;
+}
+
+#titulo {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+¨ fieldset {
+    border: 0;
+}
+
+#formulario {
+    background-color: #fff;
+    font-size: 1rem;
+    color: #000;
+    margin-left: 30%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #327c99;
+    display: block;
+}
+
+.nome {
+    width: 16rem;
+}
+
+.Mensagem {
+    width: 45rem;
+    height: 10rem;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="phone"], .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #327c99;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo input:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #327c99;
+    color: #fff;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.botao:hover {
+    background: #f9b122;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+@media(max-width: 500px) {
+    #bannerFormulario {
+        margin-bottom: 100px;
+    }
+    .banner-formulario {
+        height: 300px;
+        width: 100%;
+    }
+    .imagem_mobile {
+        display: block;
+        width: 100%;
+    }
+    .imagem_desktop {
+        display: none;
+    }
+    #titulo {
+        margin-left: -40px;
+        font-size: 30px;
+    }
+    #formulario form {
+        margin-left: -90px;
+    }
+    .nome {
+        width: 20rem;
+    }
+    .email {
+        width: 20rem;
+    }
+    .phone {
+        width: 20rem;
+    }
+    .Mensagem {
+        width: 20rem;
+        height: 10rem;
+    }
+    .botao{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

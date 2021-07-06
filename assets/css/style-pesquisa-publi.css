@@ -1,0 +1,98 @@
+#bannerPaginaPubli {
+    margin-bottom: 100px;
+}
+
+#direita, #centro{
+    margin-bottom: 50px;
+}
+#direita {
+    width: 50%;
+    float: right;
+    
+}
+
+#direita h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#direita .btn{
+    text-align: center;
+    margin-left: 80px;
+}
+#centro {
+    width: 50%;
+    
+}
+
+.card-centro {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    border: 2px solid #999;
+    margin-bottom: 10px;
+}
+
+.card-direita {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    border: 2px solid black;
+}
+
+.card-img-top {
+   width:70%;
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.card-title {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    margin-left: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#vertodos{
+    text-align: center;
+    margin-left: 25px;
+    margin-left: -900px;
+}
+@media(max-width: 500px) {
+    #bannerPaginaPubli {
+        margin-bottom: 100px;
+    }
+    #bannerPrincipal {
+        height: 300px;
+        width: 100%;
+    }
+    #direita{
+        display: none;
+    }
+    .card-centro{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border: none;
+        margin-bottom: 10px;
+    }
+    #vertodos{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

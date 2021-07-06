@@ -1,0 +1,51 @@
+.titulo {
+    font-weight: bolder;
+    color: #000;
+    text-align: center;
+}
+
+.texto {
+    color: #000;
+    text-align: center;
+}
+
+#bannerPaginaCursosEquipe {
+    margin-bottom: 200px;
+}
+
+.containerPSub {
+    margin-bottom: 30px;
+}
+
+@media(max-width: 500px) {
+    .oQueECatedra {
+        margin-left: -80px;
+        width: 320px;
+    }
+    .containerPSub {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #bannerPaginaCursosEquipe {
+        margin-bottom: 100px;
+    }
+    #bannerPrincipal {
+        height: 300px;
+        width: 100%;
+    }
+    .containerPSub h2 {
+        background-image: linear-gradient(to left, #327c99, #327c99);
+        width: 100%;
+        text-align: center;
+    }
+    .content {
+        width: 94%;
+    }
+    Table thead {
+       display: none;
+    }
+    Table tbody td {
+        display: flex;
+        flex-direction: column;
+    }
+}
